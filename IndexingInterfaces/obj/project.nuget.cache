@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "iJrrlmpNAV2AU1PYM++91M/hwptjLKAsRpgbTzksJUy49YKsQNklm7sD2yN1gkfjCr1bmf6fnv/f6jEPXPJ0Wg==",
+  "success": true,
+  "projectFilePath": "/Users/james.mitchell5/Projects/Indexing/IndexingInterfaces/IndexingInterfaces.csproj",
+  "expectedPackageFiles": [
+    "/Users/james.mitchell5/.nuget/packages/microsoft.orleans.codegenerator.msbuild/3.4.3/microsoft.orleans.codegenerator.msbuild.3.4.3.nupkg.sha512",
+    "/Users/james.mitchell5/.nuget/packages/microsoft.orleans.core.abstractions/3.4.3/microsoft.orleans.core.abstractions.3.4.3.nupkg.sha512",
+    "/Users/james.mitchell5/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/james.mitchell5/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "/Users/james.mitchell5/.nuget/packages/microsoft.netcore.app.ref/6.0.0-preview.6.21352.12/microsoft.netcore.app.ref.6.0.0-preview.6.21352.12.nupkg.sha512"
+  ],
+  "logs": []
+}

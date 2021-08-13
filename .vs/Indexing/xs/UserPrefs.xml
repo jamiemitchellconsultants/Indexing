@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{104590DC-05FD-4DD3-A96C-C5BD58F751E7}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Indexing/TreeTest.cs">
+    <Files>
+      <File FileName="IndexingGrains/BPTreeGrain.cs" Line="23" Column="10" />
+      <File FileName="IndexingInterfaces/IItem.cs" />
+      <File FileName="IndexingGrains/NodeGrain.cs" Line="58" Column="25" />
+      <File FileName="Indexing/TreeTest.cs" Line="25" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Indexing" expanded="True">
+            <Node name="Indexing" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="xunit" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="IndexingGrains" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="IndexingInterfaces" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Indexing PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

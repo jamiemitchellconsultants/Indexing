@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/james.mitchell5/Projects/Indexing/IndexingInterfaces/IndexingInterfaces.csproj": {}
+  },
+  "projects": {
+    "/Users/james.mitchell5/Projects/Indexing/IndexingInterfaces/IndexingInterfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/james.mitchell5/Projects/Indexing/IndexingInterfaces/IndexingInterfaces.csproj",
+        "projectName": "IndexingInterfaces",
+        "projectPath": "/Users/james.mitchell5/Projects/Indexing/IndexingInterfaces/IndexingInterfaces.csproj",
+        "packagesPath": "/Users/james.mitchell5/.nuget/packages/",
+        "outputPath": "/Users/james.mitchell5/Projects/Indexing/IndexingInterfaces/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/james.mitchell5/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Orleans.CodeGenerator.MSBuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "Microsoft.Orleans.Core.Abstractions": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.0-preview.6.21352.12, 6.0.0-preview.6.21352.12]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100-preview.6.21355.2/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
