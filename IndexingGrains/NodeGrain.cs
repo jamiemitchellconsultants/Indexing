@@ -183,6 +183,7 @@ namespace IndexingGrains
             if (nextNode == null)
             {
                 // this is the last node under the parent
+                return;
             }
             // check the next node to see if we need to merge
             var nextNodeSize = await nextNode.NodeSize();
@@ -192,7 +193,7 @@ namespace IndexingGrains
 
         public async Task RemoveNode(TKey key)
         {
-            
+            await Task.CompletedTask;
         }
 
         public async Task<int> NodeSize()
@@ -328,10 +329,7 @@ namespace IndexingGrains
             }
 
             return _store.State.Items.FirstOrDefault(o => o.Key.CompareTo(key) == 0).Value;
-            var fod = _store.State.Items.Where(o => o.Key.CompareTo(key) == 0);
-            var keyValuePairs = fod as KeyValuePair<TKey, TValue>[] ?? fod.ToArray();
-            if (!keyValuePairs.Any()) return await Task.FromResult<TValue?>(default);
-            return await Task.FromResult(keyValuePairs.First().Value ?? default);
+
         }
     }
     [Serializable]
