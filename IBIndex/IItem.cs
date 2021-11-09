@@ -1,5 +1,4 @@
-﻿using System;
-namespace IndexingInterfaces
+﻿namespace IBIndex
 {
     /// <summary>
     /// Items are the elements that are indexed in the tree

@@ -1,13 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.810.6
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexing", "Indexing\Indexing.csproj", "{104590DC-05FD-4DD3-A96C-C5BD58F751E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indexing", "Indexing\Indexing.csproj", "{104590DC-05FD-4DD3-A96C-C5BD58F751E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexingGrains", "IndexingGrains\IndexingGrains.csproj", "{B781D9C8-BE85-4004-8CB7-F832021926D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndexingGrains", "IndexingGrains\IndexingGrains.csproj", "{B781D9C8-BE85-4004-8CB7-F832021926D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexingInterfaces", "IndexingInterfaces\IndexingInterfaces.csproj", "{A4B1B373-01D0-422A-9F42-8AF23C06817C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndexingInterfaces", "IndexingInterfaces\IndexingInterfaces.csproj", "{A4B1B373-01D0-422A-9F42-8AF23C06817C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBIndex", "IBIndex\IBIndex.csproj", "{CFFA691D-1F5A-4B2D-A9B7-212D96A861F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIndexGrains", "BIndexGrains\BIndexGrains.csproj", "{6C294555-DF7A-4035-8F7E-5AE12A8961CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{A4B1B373-01D0-422A-9F42-8AF23C06817C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4B1B373-01D0-422A-9F42-8AF23C06817C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4B1B373-01D0-422A-9F42-8AF23C06817C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFA691D-1F5A-4B2D-A9B7-212D96A861F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFA691D-1F5A-4B2D-A9B7-212D96A861F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFA691D-1F5A-4B2D-A9B7-212D96A861F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFA691D-1F5A-4B2D-A9B7-212D96A861F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C294555-DF7A-4035-8F7E-5AE12A8961CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C294555-DF7A-4035-8F7E-5AE12A8961CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C294555-DF7A-4035-8F7E-5AE12A8961CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C294555-DF7A-4035-8F7E-5AE12A8961CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

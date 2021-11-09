@@ -11,7 +11,7 @@ using Orleans.Runtime;
 namespace IndexingGrains
 {
     [StorageProvider(ProviderName = "indexStore")]
-    public class BPTreeGrain<TKey,TValue>:Grain,IBPTree<TKey,TValue> where TKey:IComparable
+    public class BPTreeGrain<TKey,TValue>:Grain,IBPTree<TKey,TValue> where TKey:IComparable where TValue:struct
     {
         private readonly IPersistentState<BPTreeState<TKey, TValue>> _store;
         private readonly ILogger<BPTreeGrain<TKey, TValue>> _logger;
@@ -74,7 +74,7 @@ namespace IndexingGrains
             await nodeWithValue.Remove(key);
         }
 
-        public async Task<TValue?> Get(TKey key)
+        public async Task<TValue> Get(TKey key)
         {
             if (!_store.State.IsInitialized)
                 throw new InvalidOperationException("Not initialized");
