@@ -52,14 +52,30 @@ namespace Indexing
 
                 var testItem = new List<IBIndex.IItem<string, Guid>>
                 {
-                    new Item<string, Guid>("key 50", Guid.NewGuid())
+                    new Item<string, Guid>("key 10", Guid.NewGuid()),
+                    new Item<string, Guid>("key 20", Guid.NewGuid()),
+                    new Item<string, Guid>("key 30", Guid.NewGuid()),
+                    new Item<string, Guid>("key 40", Guid.NewGuid()),
+                    new Item<string, Guid>("key 50", Guid.NewGuid()),
+                    new Item<string, Guid>("key 60", Guid.NewGuid()),
+                    new Item<string, Guid>("key 70", Guid.NewGuid()),
+                    new Item<string, Guid>("key 80", Guid.NewGuid())
                 };
                 await client.Connect();
                 var leafGuid= Guid.NewGuid();
                 var testLeafGrain = client.GetGrain<IBLeaf<string, Guid>>(leafGuid);
-                var actual=await testLeafGrain.Add(testItem[0]);
-                Assert.Null(actual);
 
+                await testLeafGrain.Initialize(6, null, new SortedDictionary<string, IBIndex.IItem<string, Guid>>());
+
+                var actual=await testLeafGrain.Add(testItem[0]);
+                actual = await testLeafGrain.Add(testItem[1]);
+                actual = await testLeafGrain.Add(testItem[2]);
+                actual = await testLeafGrain.Add(testItem[3]);
+                actual = await testLeafGrain.Add(testItem[4]);
+                actual = await testLeafGrain.Add(testItem[5]);
+                Assert.Null(actual);
+                actual = await testLeafGrain.Add(testItem[6]);
+                Assert.NotNull(actual);
 
             }
             catch (Exception ex)
